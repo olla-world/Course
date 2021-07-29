@@ -1,0 +1,26 @@
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background: white;
+  position: fixed;
+  top: 0px;
+  padding: 8px;
+  border-top: 4px solid #f8922d;
+  z-index: 10;
+}
+
+.navbar .logo--text {
+  padding: 0px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.link {
+  text-decoration: none;
+}
+/*# sourceMappingURL=navbar.style.css.map */

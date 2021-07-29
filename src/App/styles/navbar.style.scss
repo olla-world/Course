@@ -1,0 +1,27 @@
+.navbar{
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    background: white;
+
+    position: fixed;
+    top:0px;
+    padding: 8px;
+    border-top: 4px solid #f8922d;
+
+    z-index: 10;
+
+    .logo{
+        &--text{
+            padding: 0px;
+            font-size: 24px;
+            // color: white;
+            font-weight: 500;
+        }
+    }
+}
+
+.link{
+    text-decoration: none;
+}

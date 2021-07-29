@@ -1,0 +1,14 @@
+@mixin for-tablet-portrait-up {
+    @media (min-width: 768px) { @content; }
+}
+
+.courses{
+    padding: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @include for-tablet-portrait-up {
+        justify-content: flex-start;
+    }
+}

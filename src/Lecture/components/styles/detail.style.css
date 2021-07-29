@@ -1,0 +1,115 @@
+.lecture-detail {
+  margin: 0px 8px;
+  width: calc(100vw - 16px);
+  max-width: calc(100vw - 16px);
+}
+
+@media (min-width: 768px) {
+  .lecture-detail {
+    margin: 0px 16px 0px 282px;
+    width: calc(100vw - 298px);
+    max-width: calc(100vw - 298px);
+  }
+}
+
+.lecture-detail .lecture__name {
+  color: #008cff;
+  font-size: 24px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lecture-detail .lecture__name img {
+  margin-right: 8px;
+}
+
+.lecture-detail .topic__name {
+  margin-top: 64px;
+  color: #00c230;
+  font-size: 22px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lecture-detail .topic__name img {
+  margin-right: 8px;
+}
+
+.lecture-detail .topic__important {
+  color: #c25700;
+  font-size: 18px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lecture-detail .topic__important img {
+  margin-right: 4px;
+}
+
+.lecture-detail .topic__des {
+  color: #494949;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin: 8px 0px;
+}
+
+.lecture-detail .topic__des em {
+  background: #e0e0e0;
+  padding: 0px 8px;
+  border-radius: 4px;
+}
+
+.lecture-detail .topic__code {
+  border: 10px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: auto;
+  background-color: #5f4429;
+  color: #ffe2c3;
+  padding: 8px;
+}
+
+.lecture-detail .homework__headline {
+  color: #c87262;
+  font-size: 16px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lecture-detail .homework__headline img {
+  margin-right: 8px;
+}
+
+ul {
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+ul li {
+  padding: 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  list-style: none;
+}
+/*# sourceMappingURL=detail.style.css.map */

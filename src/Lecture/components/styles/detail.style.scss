@@ -1,0 +1,113 @@
+@mixin for-tablet-portrait-up {
+    @media (min-width: 768px) { @content; }
+}
+
+.lecture-detail{
+
+    margin: 0px 8px;
+    width: calc(100vw - 16px);
+    max-width: calc(100vw - 16px );
+
+    @include for-tablet-portrait-up {
+        margin: 0px 16px 0px 282px;
+        width: calc(100vw - 298px);
+        max-width: calc(100vw - 298px );
+    }
+      
+    .lecture{
+        &__name{
+            color: rgb(0, 140, 255);
+            font-size: 24px;
+            font-weight: 500;
+
+            display: flex;
+            align-items: center;
+
+            img{
+                margin-right: 8px;
+            }
+        }
+    }
+    .topic{
+        &__name{
+            margin-top: 64px;
+            color: rgb(0, 194, 48);
+            font-size: 22px;
+            font-weight: 400;
+
+            display: flex;
+            align-items: center;
+
+            img{
+                margin-right: 8px;
+            }
+        }
+
+        &__important{
+            color: rgb(194, 87, 0);
+            font-size: 18px;
+            font-weight: 500;
+
+            display: flex;
+            align-items: center;
+
+            img{
+                margin-right: 4px;
+            }
+        }
+
+        &__des{
+            color: #494949;
+            font-size: 18px;
+            letter-spacing: 1px;
+            line-height: 24px;
+            margin: 8px 0px;
+
+            em{
+                background: #e0e0e0;
+                padding: 0px 8px;
+                border-radius: 4px;
+            }
+        }
+
+        &__code{
+            border: 10px solid rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: auto;
+            background-color: #5f4429;
+            color: #ffe2c3;
+            padding: 8px;
+        }
+    }
+
+    .homework{
+        &__headline{
+            color: #c87262;
+            font-size: 16px;
+            font-weight: 500;
+
+            display: flex;
+            align-items: center;
+
+            img{
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+
+
+ul{
+    background: rgb(240, 240, 240);
+    border-radius: 8px;
+    padding: 16px;
+
+    li{
+        padding: 8px;
+        border-radius: 8px;
+
+        text-decoration: none;
+        list-style: none;
+    }
+}

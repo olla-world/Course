@@ -1,0 +1,95 @@
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table__header-row {
+  -webkit-box-shadow: 0px 3px 5px 2px #00000036;
+          box-shadow: 0px 3px 5px 2px #00000036;
+}
+
+.table__header-row__cell {
+  padding: 24px 8px;
+  font-size: 14px;
+  text-align: left;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.table__body-row {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.table__body-row__cell {
+  padding: 16px 8px;
+  font-size: 14px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.table__body-row__cell .cell-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.table__body-row__cell .cell-wrap .pill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 8px 16px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.table__body-row__cell .cell-wrap .pill--delivered {
+  background: #c5c5fe;
+}
+
+.table__body-row__cell .cell-wrap .pill--paid {
+  background: #b1ddcb;
+}
+
+.table__body-row__cell .cell-wrap .pill--boarding {
+  background: #fbe668;
+  text-transform: unset;
+}
+
+.table__body-row__cell .cell-wrap .badge {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.table__body-row__cell .cell-wrap .badge--market {
+  margin: 0px 8px;
+  padding: 8px;
+  background: #373737;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,110 @@
+@mixin for-tablet-portrait-up {
+    @media (min-width: 768px) { @content; }
+}
+
+.sidenav__controller{
+    display: block;
+    position: fixed;
+    z-index: 15;
+    
+    // background: #303030;
+    top:30px;
+    right:8px;
+
+    cursor: pointer;
+
+    @include for-tablet-portrait-up(){
+        display: none;
+    }
+    .book{
+        height: 32px;
+        width: 32px;
+    }
+}
+.sidenav{
+    display: none;
+    @include for-tablet-portrait-up {
+        display: block;
+        min-width: 250px;
+        // border-right: 1px solid #f4f4f4;
+        position: fixed;
+        top:47px;
+        z-index: 10;
+        min-height: calc(100vh - 47px);
+        padding: 16px 16px 0px 0px;
+        box-shadow: none;
+        background: white;
+
+        .menu{
+            cursor: pointer;
+            color: #00bf2a;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            border-radius: 0px 50px 50px 0px;
+            &:hover{
+                background-color: #f7f7ff;
+            }
+
+            &--active{
+                background-color: #f7f7ff;
+            }
+
+            &__icon{
+                margin-right: 8px;
+                height: 32px;
+            }
+        }
+    }
+
+
+    &--mini{
+
+        &--show{
+            display: block;
+            width: 250px;
+            // border-right: 1px solid #f4f4f4;
+            position: fixed;
+            top:47px;
+            z-index: 10;
+            min-height: calc(100vh - 47px);
+            padding: 16px 16px 0px 0px;
+            background: white;
+            box-shadow: 1px 5px 5px rgba(70, 70, 70, 0.3);
+
+            @include for-tablet-portrait-up {
+                box-shadow: none
+            }
+
+            .menu{
+                cursor: pointer;
+                color: #00bf2a;
+                font-size: 16px;
+                font-weight: 500;
+                padding: 8px;
+                display: flex;
+                align-items: center;
+                border-radius: 0px 50px 50px 0px;
+                &:hover{
+                    background-color: #f7f7ff;
+                }
+
+                &--active{
+                    background-color: #f7f7ff;
+                }
+                
+                &__icon{
+                    margin-right: 8px;
+                    height: 32px;
+                }
+            }
+        }
+
+        &--hdie{
+            width: 0px;            
+            box-shadow: none;
+        }
+    }
+}

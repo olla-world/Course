@@ -1,0 +1,117 @@
+.sidenav__controller {
+  display: block;
+  position: fixed;
+  z-index: 15;
+  top: 30px;
+  right: 8px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .sidenav__controller {
+    display: none;
+  }
+}
+
+.sidenav__controller .book {
+  height: 32px;
+  width: 32px;
+}
+
+.sidenav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .sidenav {
+    display: block;
+    min-width: 250px;
+    position: fixed;
+    top: 47px;
+    z-index: 10;
+    min-height: calc(100vh - 47px);
+    padding: 16px 16px 0px 0px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: white;
+  }
+  .sidenav .menu {
+    cursor: pointer;
+    color: #00bf2a;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 0px 50px 50px 0px;
+  }
+  .sidenav .menu:hover {
+    background-color: #f7f7ff;
+  }
+  .sidenav .menu--active {
+    background-color: #f7f7ff;
+  }
+  .sidenav .menu__icon {
+    margin-right: 8px;
+    height: 32px;
+  }
+}
+
+.sidenav--mini--show {
+  display: block;
+  width: 250px;
+  position: fixed;
+  top: 47px;
+  z-index: 10;
+  min-height: calc(100vh - 47px);
+  padding: 16px 16px 0px 0px;
+  background: white;
+  -webkit-box-shadow: 1px 5px 5px rgba(70, 70, 70, 0.3);
+          box-shadow: 1px 5px 5px rgba(70, 70, 70, 0.3);
+}
+
+@media (min-width: 768px) {
+  .sidenav--mini--show {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+.sidenav--mini--show .menu {
+  cursor: pointer;
+  color: #00bf2a;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0px 50px 50px 0px;
+}
+
+.sidenav--mini--show .menu:hover {
+  background-color: #f7f7ff;
+}
+
+.sidenav--mini--show .menu--active {
+  background-color: #f7f7ff;
+}
+
+.sidenav--mini--show .menu__icon {
+  margin-right: 8px;
+  height: 32px;
+}
+
+.sidenav--mini--hdie {
+  width: 0px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+/*# sourceMappingURL=style.css.map */

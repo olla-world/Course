@@ -1,0 +1,19 @@
+.card--course {
+  display: block;
+  margin: 6px;
+  height: 200px;
+  min-width: 250px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #0000001f;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (min-width: 768px) {
+  .card--course {
+    min-width: 300px;
+  }
+}
+/*# sourceMappingURL=course.style.css.map */
