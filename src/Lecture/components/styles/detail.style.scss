@@ -44,7 +44,7 @@
         }
 
         &__important{
-            color: rgb(194, 87, 0);
+            color: #b43608;
             font-size: 18px;
             font-weight: 500;
 
@@ -57,7 +57,7 @@
         }
 
         &__des{
-            color: #494949;
+            color: #5c616e;
             font-size: 18px;
             letter-spacing: 1px;
             line-height: 24px;
@@ -71,12 +71,22 @@
         }
 
         &__code{
-            border: 10px solid rgba(0, 0, 0, 0.1);
+            // border: 10px solid rgba(0, 0, 0, 0.1);
+            letter-spacing: 1px;
+            line-height: 24px;
             border-radius: 8px;
             overflow: auto;
-            background-color: #5f4429;
-            color: #ffe2c3;
+            background-color: #7791a1;
+            color: #faf0e4;
             padding: 8px;
+        }
+
+        &__link{
+            display: flex;
+            align-items: center;
+            img{
+                margin-right: 4px;
+            }
         }
     }
 
@@ -101,10 +111,10 @@
 ul{
     background: rgb(240, 240, 240);
     border-radius: 8px;
-    padding: 16px;
+    padding: 4px 8px;
 
     li{
-        padding: 8px;
+        padding: 0 4px;
         border-radius: 8px;
 
         text-decoration: none;

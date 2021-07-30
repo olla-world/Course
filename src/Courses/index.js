@@ -30,9 +30,16 @@ export default function Courses(){
                 <div className="courses">{
                     courses && courses.map(course=>
                         <Course 
+                            key={course.id}
                             link = {replace_space_with_hyphen(course.name)}
-                            banner={course.banner}
-                            backgroundColor={course.backgroundColor}
+                            banner = {course.banner}
+                            berif = {course.berif}
+                            start_date = {course.start_date}
+                            end_date = {course.end_date}
+                            github={course.github}
+                            total_lecture = {course.total_lecture}
+                            current_lecture = {course.current_lecture}
+                            backgroundColor = {course.backgroundColor}
                         />
                     )}
                 </div>

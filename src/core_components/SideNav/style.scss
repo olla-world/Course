@@ -37,19 +37,20 @@
 
         .menu{
             cursor: pointer;
-            color: #00bf2a;
+            color: white;
             font-size: 16px;
             font-weight: 500;
             padding: 8px;
             display: flex;
             align-items: center;
             border-radius: 0px 50px 50px 0px;
+            background-color: rgba(243, 170, 146, 0.6);
             &:hover{
-                background-color: #f7f7ff;
+                background-color: rgba(243, 170, 146, 0.8);
             }
 
             &--active{
-                background-color: #f7f7ff;
+                background-color: #f3aa92;
             }
 
             &__icon{
@@ -80,19 +81,20 @@
 
             .menu{
                 cursor: pointer;
-                color: #00bf2a;
+                color: white;
                 font-size: 16px;
                 font-weight: 500;
                 padding: 8px;
                 display: flex;
                 align-items: center;
                 border-radius: 0px 50px 50px 0px;
+                background-color: rgba(243, 170, 146, 0.6);
                 &:hover{
-                    background-color: #f7f7ff;
+                    background-color: rgba(243, 170, 146, 0.8);
                 }
-
+    
                 &--active{
-                    background-color: #f7f7ff;
+                    background-color: #f3aa92;
                 }
                 
                 &__icon{

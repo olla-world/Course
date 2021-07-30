@@ -31,8 +31,6 @@ const fetchDetail = (courseName, lectureName) =>async (dispatch, getState)=>{
     const response = await Axios.get(
       BASE_URL + `/olla-world/Pattho-Dhara/main/${courseName}/${lectureName}/detail.md`,
     )
-
-    console.log(response)
     dispatch( {
       type: "FETCH_DETAIL_SUCCESS",
       payload: response.data

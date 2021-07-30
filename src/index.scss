@@ -24,15 +24,39 @@ code {
   
   &--courses{
       display: flex;
+      justify-content: center;
   }
 
   &--navbar{
       display: flex;
       align-items: center;
+      justify-content: center;
   }
 
   &--detail{
     display: flex;
+    padding-bottom: 300px;
+  }
+
+  &--progress-bar{
+    flex: 1;
+    margin-left: 32px;
+    justify-content: flex-end;
+    
+    display: flex;
+    flex-direction: column;
+
+    .status{
+      position: absolute;
+      right: 30px;
+      margin-top: 20px;
+    }
+  }
+
+  &--header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
   }
 }
 

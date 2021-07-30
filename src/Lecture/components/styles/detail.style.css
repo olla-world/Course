@@ -46,7 +46,7 @@
 }
 
 .lecture-detail .topic__important {
-  color: #c25700;
+  color: #b43608;
   font-size: 18px;
   font-weight: 500;
   display: -webkit-box;
@@ -62,7 +62,7 @@
 }
 
 .lecture-detail .topic__des {
-  color: #494949;
+  color: #5c616e;
   font-size: 18px;
   letter-spacing: 1px;
   line-height: 24px;
@@ -76,12 +76,26 @@
 }
 
 .lecture-detail .topic__code {
-  border: 10px solid rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+  line-height: 24px;
   border-radius: 8px;
   overflow: auto;
-  background-color: #5f4429;
-  color: #ffe2c3;
+  background-color: #7791a1;
+  color: #faf0e4;
   padding: 8px;
+}
+
+.lecture-detail .topic__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lecture-detail .topic__link img {
+  margin-right: 4px;
 }
 
 .lecture-detail .homework__headline {
@@ -103,11 +117,11 @@
 ul {
   background: #f0f0f0;
   border-radius: 8px;
-  padding: 16px;
+  padding: 4px 8px;
 }
 
 ul li {
-  padding: 8px;
+  padding: 0 4px;
   border-radius: 8px;
   text-decoration: none;
   list-style: none;

@@ -5,19 +5,23 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   background: white;
   position: fixed;
   top: 0px;
   padding: 8px;
-  border-top: 4px solid #f8922d;
+  border-top: 4px solid #3e0e4a;
   z-index: 10;
 }
 
 .navbar .logo--text {
   padding: 0px;
   font-size: 24px;
-  font-weight: 500;
+  color: #17043f;
+  font-weight: 700;
 }
 
 .link {

@@ -16,7 +16,6 @@ const routes = [
 ];
 
 function routePath(name) {
-  console.log(name)
   let route = routes.find(route => route.name === name);
 
   if (route === undefined) return '';

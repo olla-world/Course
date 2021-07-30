@@ -9,11 +9,29 @@
           justify-content: center;
 }
 
+.course--name {
+  position: fixed;
+  z-index: 15;
+  padding: 14px;
+  background: #f65868;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: .75px;
+  left: 0;
+  bottom: 0px;
+  border-radius: 0px;
+  width: 100%;
+}
+
 @media (min-width: 768px) {
-  .courses {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+  .course--name {
+    top: 3px;
+    bottom: unset;
+    border-radius: 0 8px 8px 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 /*# sourceMappingURL=style.css.map */

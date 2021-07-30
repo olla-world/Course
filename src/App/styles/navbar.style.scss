@@ -1,6 +1,7 @@
 .navbar{
     display: flex;
     align-items: center;
+    justify-content: center;
 
     width: 100%;
     background: white;
@@ -8,7 +9,7 @@
     position: fixed;
     top:0px;
     padding: 8px;
-    border-top: 4px solid #f8922d;
+    border-top: 4px solid #3e0e4a;
 
     z-index: 10;
 
@@ -16,8 +17,8 @@
         &--text{
             padding: 0px;
             font-size: 24px;
-            // color: white;
-            font-weight: 500;
+            color: #17043f;
+            font-weight: 700;
         }
     }
 }

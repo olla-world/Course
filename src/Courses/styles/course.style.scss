@@ -4,21 +4,66 @@
 
 .card{
     &--course{
-        display: block;
-        margin: 6px;
-        height: 200px;
-        min-width: 250px;
+        display: flex;
+        flex-direction: column;
+        // margin: 6px;
+        // height: 200px;
+        // min-width: 250px;
 
-        border-radius: 8px;
-        cursor: pointer;
+        // cursor: pointer;
         border: 1px solid #0000001f;
+        border-radius: 8px;
+       
 
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-
-        @include for-tablet-portrait-up {
+        &__head{
+            min-height: 200px;
             min-width: 300px;
+
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            
+            border-radius: 8px 0 0 8px;
+        }
+
+        &__body{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 16px;
+
+            .des{
+                .berif{
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                .gitlink{
+                    padding: 8px 0;
+                    img{
+                        margin-right: 4px;
+                    }
+                }
+                .headline{
+                    padding: 8px 0px;
+                    img{
+                        margin-right: 4px;
+                    }
+                }
+            }
+            .action{
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+                .button{
+                    &--continue{
+                       padding: 8px 16px;
+                       border-radius: 8px;
+                    }
+                }
+            }
+        }
+        @include for-tablet-portrait-up {
+            flex-direction: row;
         }
     }
 }

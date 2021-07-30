@@ -1,11 +1,16 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import Markdown from 'markdown-to-jsx';
 import Emojis from 'react-emoji-component';
+
+import {replace_hyphen_with_space} from './../../helpers/string_format';
 
 import './styles/detail.style.css';
 
 export default function Details(props){
     const {detail} = props
+    const { courseName } = useParams();
+
     const LectureName = ({ children, ...props }) => (
         <h1 {...props}>
             <Emojis size={24}>
@@ -17,9 +22,6 @@ export default function Details(props){
 
     const TopicName = ({ children, ...props }) => (
         <h2 {...props}>
-            {/* <Emojis size={16}>
-            📎
-            </Emojis> */}
             {children}
         </h2>
     );
@@ -42,8 +44,20 @@ export default function Details(props){
         <pre {...props}>{children}</pre>
     );
 
+    const TopicLink = ({children, ...props}) => (
+        <a {...props}>
+            <Emojis size={16}>
+            🔗
+            </Emojis>
+            {children}
+        </a>
+    )
+
     return detail? 
         <div className="lecture-detail">
+            <div className="course--name">
+                {replace_hyphen_with_space(courseName)}
+            </div>
             <Markdown
                 options={{
                     overrides: {
@@ -81,6 +95,13 @@ export default function Details(props){
                                 className: 'topic__code'
                             }
                         },
+
+                        a:{
+                            component: TopicLink,
+                            props:{
+                                className: 'topic__link'
+                            }
+                        }
                     },
                 }}
             >

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-import LectureImage from './img/lecture.png';
 import CloseBookImage from './img/close-book.png';
 import OpenBookImage from './img/open-book.png';
 
@@ -30,14 +29,6 @@ export default function SideNav(props){
                     key={`menu-item-${index}`}
                     onClick={()=>updateCurrentLecture(index)}
                 >
-                    {/* {menuItem.type.toLowerCase() === 'lecture' ? 
-                        <img 
-                            src={`${LectureImage}`} 
-                            alt="lecture" 
-                            className="menu__icon"
-                        />
-                        :null
-                    } */}
                     <div className="menu__label">{menuItem.label}</div>
                 </div>
             )}

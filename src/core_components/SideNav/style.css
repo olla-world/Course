@@ -37,7 +37,7 @@
   }
   .sidenav .menu {
     cursor: pointer;
-    color: #00bf2a;
+    color: white;
     font-size: 16px;
     font-weight: 500;
     padding: 8px;
@@ -48,12 +48,13 @@
         -ms-flex-align: center;
             align-items: center;
     border-radius: 0px 50px 50px 0px;
+    background-color: rgba(243, 170, 146, 0.6);
   }
   .sidenav .menu:hover {
-    background-color: #f7f7ff;
+    background-color: rgba(243, 170, 146, 0.8);
   }
   .sidenav .menu--active {
-    background-color: #f7f7ff;
+    background-color: #f3aa92;
   }
   .sidenav .menu__icon {
     margin-right: 8px;
@@ -83,7 +84,7 @@
 
 .sidenav--mini--show .menu {
   cursor: pointer;
-  color: #00bf2a;
+  color: white;
   font-size: 16px;
   font-weight: 500;
   padding: 8px;
@@ -94,14 +95,15 @@
       -ms-flex-align: center;
           align-items: center;
   border-radius: 0px 50px 50px 0px;
+  background-color: rgba(243, 170, 146, 0.6);
 }
 
 .sidenav--mini--show .menu:hover {
-  background-color: #f7f7ff;
+  background-color: rgba(243, 170, 146, 0.8);
 }
 
 .sidenav--mini--show .menu--active {
-  background-color: #f7f7ff;
+  background-color: #f3aa92;
 }
 
 .sidenav--mini--show .menu__icon {
