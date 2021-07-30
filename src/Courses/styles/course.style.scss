@@ -23,7 +23,11 @@
             background-repeat: no-repeat;
             background-size: contain;
             
-            border-radius: 8px 0 0 8px;
+            border-radius: 8px 8px 0 0;
+
+            @include for-tablet-portrait-up {
+                border-radius: 8px 0 0 8px;
+            }
         }
 
         &__body{
