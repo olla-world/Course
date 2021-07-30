@@ -35,16 +35,15 @@ export default function Course(props){
             <div className="des">
                 <div className="berif">{berif}</div>
                 <div className="gitlink">
-                    <Link 
-                        to={github}
+                    <a 
+                        href={github}
                         target="_blank" 
-                        rel="noreferrer"
                     >
                         <Emojis size={24}>
                         🔗 
                         </Emojis> 
                         Github
-                    </Link>
+                    </a>
                 </div>
                 <div className="headline">
                     <Emojis size={24}>
