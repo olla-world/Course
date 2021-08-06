@@ -13,9 +13,6 @@ export default function Details(props){
 
     const LectureName = ({ children, ...props }) => (
         <h1 {...props}>
-            <Emojis size={24}>
-            📌
-            </Emojis> 
             {children}
         </h1>
     );
@@ -53,11 +50,15 @@ export default function Details(props){
         </a>
     )
 
-    return detail? 
-        <div className="lecture-detail">
-            <div className="course--name">
-                {replace_hyphen_with_space(courseName)}
-            </div>
+    const TopicSimpleCode = ({ children, ...props }) => (
+        <code {...props}>{children}</code>
+    );
+
+    return <div className="lecture-detail">
+        <div className="course--name">
+            {replace_hyphen_with_space(courseName)}
+        </div>
+        {detail? 
             <Markdown
                 options={{
                     overrides: {
@@ -101,12 +102,21 @@ export default function Details(props){
                             props:{
                                 className: 'topic__link'
                             }
+                        },
+
+                        code:{
+                            component: TopicSimpleCode,
+                            props:{
+                                className: 'topic__simple-code'
+                            }
                         }
                     },
                 }}
             >
                 {detail}
             </Markdown>
-        </div>
-        :<></>
+            :<></>
+        }
+    </div>
+
 }

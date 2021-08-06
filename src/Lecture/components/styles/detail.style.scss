@@ -57,14 +57,15 @@
         }
 
         &__des{
-            color: #5c616e;
+            color: #4c5468;
             font-size: 18px;
             letter-spacing: 1px;
             line-height: 24px;
             margin: 8px 0px;
 
             em{
-                background: #e0e0e0;
+                color: #0051ff ;
+                // background: #e0e0e0;
                 padding: 0px 8px;
                 border-radius: 4px;
             }
@@ -76,9 +77,21 @@
             line-height: 24px;
             border-radius: 8px;
             overflow: auto;
-            background-color: #7791a1;
+            background-color: #e0e0e0;
             color: #faf0e4;
             padding: 8px;
+        }
+
+        &__simple-code{
+            background: #e0e0e0;
+            // padding: 2px 8px;
+            border-radius: 4px;
+
+            color: #5c616e;
+            font-size: 18px;
+            letter-spacing: 1px;
+            line-height: 24px;
+            margin: 8px 0px; 
         }
 
         &__link{
