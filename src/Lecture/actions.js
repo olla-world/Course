@@ -29,7 +29,7 @@ const fetchDetail = (courseName, lectureName) =>async (dispatch, getState)=>{
   })
   try{
     const response = await Axios.get(
-      BASE_URL + `/olla-world/Pattho-Dhara/main/${courseName}/${lectureName}/detail.md`,
+      BASE_URL + `/olla-world/Pattho-Dhara/main/${courseName}/${lectureName}/README.md`,
     )
     dispatch( {
       type: "FETCH_DETAIL_SUCCESS",
