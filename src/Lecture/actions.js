@@ -8,7 +8,7 @@ const fetchMenu = (courseName) => async (dispatch, getState)=>{
   })
   try{
     const response = await Axios.get(
-      BASE_URL + `/olla-world/Pattho-Dhara/main/${courseName}/menu.json`,
+      BASE_URL + `/olla-world/courses/main/${courseName}/menu.json`,
     )
 
     dispatch( {
@@ -29,7 +29,7 @@ const fetchDetail = (courseName, lectureName) =>async (dispatch, getState)=>{
   })
   try{
     const response = await Axios.get(
-      BASE_URL + `/olla-world/Pattho-Dhara/main/${courseName}/${lectureName}/README.md`,
+      BASE_URL + `/olla-world/courses/main/${courseName}/${lectureName}/README.md`,
     )
     dispatch( {
       type: "FETCH_DETAIL_SUCCESS",

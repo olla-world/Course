@@ -8,7 +8,7 @@ const fetchCourses = (keywords) => async (dispatch, getState)=>{
   })
   try{
     const response = await Axios.get(
-      BASE_URL + '/olla-world/Pattho-Dhara/main/coures.json',
+      BASE_URL + '/olla-world/courses/main/coures.json',
     )
 
     dispatch( {
